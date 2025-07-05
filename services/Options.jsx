@@ -5,10 +5,12 @@ import {
 	ImageIcon,
 	LayoutDashboardIcon,
 	LayoutTemplateIcon,
+	ScrollTextIcon,
 	SettingsIcon,
 	ShapesIcon,
 	SparkleIcon,
 	TypeIcon,
+	WandSparklesIcon,
 } from 'lucide-react';
 
 export const WorkspaceMenu = [
@@ -32,8 +34,8 @@ export const WorkspaceMenu = [
 export const canvasSizeOptions = [
 	{
 		name: 'Bifold',
-		width: 500,
-		height: 500,
+		width: 1200,
+		height: 600,
 		icon: '/bifold-icon.webp',
 	},
 	{
@@ -109,7 +111,12 @@ export const sidebarMenu = [
 	{
 		name: 'Poems',
 		desc: 'Select a poem from our curated selection',
-		icon: SparkleIcon,
+		icon: ScrollTextIcon,
+	},
+	{
+		name: 'Background',
+		desc: 'Select a background from our curated selection',
+		icon: WandSparklesIcon,
 	},
 	{
 		name: 'Settings',
