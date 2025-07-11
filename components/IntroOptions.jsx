@@ -15,6 +15,11 @@ export default function IntroOptions() {
 	const { userDetail } = useContext(UserDetailContext);
 	const router = useRouter();
 
+	// Don't render the component if user is not loaded
+	if (!userDetail?._id) {
+		return <div>Loading user...</div>; // Or redirect to login
+	}
+
 	/**
 	 * Used to create new design and save to db
 	 * @param {*} option
